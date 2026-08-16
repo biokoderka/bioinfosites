@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-08-16T06:35:55.192295+00:00",
+  "jobs": {
+    "total": 766,
+    "geo": {
+      "USA": 301,
+      "Europe": 232,
+      "Other": 140,
+      "Remote": 61,
+      "Poland": 32
+    },
+    "sector": {
+      "Pharma/Biotech": 394,
+      "Academia": 248,
+      "Clinical": 99,
+      "Startup": 19
+    },
+    "seniority": {
+      "Mid": 396,
+      "Senior": 210,
+      "PostDoc": 110,
+      "PI/Lead": 27
+    }
+  },
+  "news": {
+    "board_total": 68,
+    "board_types": {
+      "Kursy stałe": 34,
+      "Meetupy": 22,
+      "Inne inicjatywy": 5,
+      "Kursy z terminem": 4,
+      "Projekty": 3
+    },
+    "board_courses_total": 38,
+    "research_total": 122,
+    "research_types": {
+      "Artykuły / preprinty": 77,
+      "Narzędzia": 30,
+      "Granty": 15
+    }
+  },
+  "uni": {
+    "programs": 24,
+    "universities": 16,
+    "cities_count": 8,
+    "cities": {
+      "Warszawa": 8,
+      "Kraków": 4,
+      "Poznań": 4,
+      "Wrocław": 4,
+      "Inne miasta": 4
+    },
+    "levels": {
+      "I stopień": 12,
+      "II stopień": 9,
+      "Studia podyplomowe": 3
+    },
+    "reviews": 86,
+    "offers_second_degree": 16,
+    "no_second_degree": 7,
+    "reviews_group": {
+      "reviews": 86,
+      "offers_second_degree": 16,
+      "no_second_degree": 7
+    }
+  }
+}

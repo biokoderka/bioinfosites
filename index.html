@@ -360,15 +360,15 @@
 
     <div class="float-grid">
       <div class="fcard jobs">
-        <div class="head"><div class="t">🧬 BioInfoJobs</div><div class="badge2">670+ ofert</div></div>
+        <div class="head"><div class="t">🧬 BioInfoJobs</div><div class="badge2"><span data-stat="jobs.total">670</span>+ ofert</div></div>
         <ul><li>Genomika • NGS • Poland/EU/US</li><li>Analiza ofert wspierana AI</li></ul>
       </div>
       <div class="fcard news">
-        <div class="head"><div class="t">📌 BioInfoNews</div><div class="badge2">68+ wpisów</div></div>
+        <div class="head"><div class="t">📌 BioInfoNews</div><div class="badge2"><span data-stat="news.board_total">68</span>+ wpisów</div></div>
         <ul><li>Meetupy i wydarzenia</li><li>Kursy i projekty do współpracy</li></ul>
       </div>
       <div class="fcard uni">
-        <div class="head"><div class="t">🎓 BioInfoUni</div><div class="badge2">24 kierunki</div></div>
+        <div class="head"><div class="t">🎓 BioInfoUni</div><div class="badge2"><span data-stat="uni.programs">24</span> kierunki</div></div>
         <ul><li>Wyszukiwarka kierunków</li><li>Opinie studentów i absolwentów</li></ul>
       </div>
       <div class="fcard ig">
@@ -386,10 +386,10 @@
 <section style="background:var(--bg3);">
   <div class="section-inner" style="padding-bottom:0;">
     <div class="stats-bar">
-      <div class="sb-stat"><b>670+</b><span>Ofert pracy</span></div>
-      <div class="sb-stat"><b>68+</b><span>Wpisów na tablicy</span></div>
-      <div class="sb-stat"><b>24</b><span>Kierunki studiów</span></div>
-      <div class="sb-stat"><b>86</b><span>Opinii studentów</span></div>
+      <div class="sb-stat"><b><span data-stat="jobs.total">670</span>+</b><span>Ofert pracy</span></div>
+      <div class="sb-stat"><b><span data-stat="news.board_total">68</span>+</b><span>Wpisów na tablicy</span></div>
+      <div class="sb-stat"><b><span data-stat="uni.programs">24</span></b><span>Kierunki studiów</span></div>
+      <div class="sb-stat"><b><span data-stat="uni.reviews">86</span></b><span>Opinii studentów</span></div>
     </div>
   </div>
 </section>
@@ -403,21 +403,21 @@
         <div class="ic">🧬</div>
         <h3>BioInfoJobs</h3>
         <p>Cotygodniowy, analizowany przez AI przegląd ofert pracy z Nature Careers, EMBL, jobs.ac.uk i innych — z filtrami regionu, sektora i poziomu.</p>
-        <div class="stat-line">📊 670+ ofert · 32 w Polsce · 269 w USA</div>
+        <div class="stat-line">📊 <span data-stat="jobs.total">670</span>+ ofert · <span data-stat="jobs.geo.Poland">32</span> w Polsce · <span data-stat="jobs.geo.USA">269</span> w USA</div>
         <a class="go" href="https://biokoderka.github.io/bioinfo-jobs/" target="_blank" rel="noopener">Zobacz oferty →</a>
       </div>
       <div class="feat f2">
         <div class="ic">📌</div>
         <h3>BioInfoNews</h3>
         <p>Tablica ogłoszeń społeczności: meetupy, kursy z terminem, kursy stałe i projekty do współpracy — wszystko w jednym miejscu.</p>
-        <div class="stat-line">📊 68+ aktywnych wpisów · 22 meetupy · 38 kursów</div>
+        <div class="stat-line">📊 <span data-stat="news.board_total">68</span>+ aktywnych wpisów · <span data-stat="news.board_types.Meetupy">22</span> meetupy · <span data-stat="news.board_courses_total">38</span> kursów</div>
         <a class="go" href="https://biokoderka.github.io/bioinfo-news" target="_blank" rel="noopener">Wejdź na tablicę →</a>
       </div>
       <div class="feat f3">
         <div class="ic">🎓</div>
         <h3>BioInfoUni</h3>
         <p>Wyszukiwarka kierunków bioinformatycznych w Polsce — dane rekrutacyjne, plany zajęć i prawdziwe opinie studentów.</p>
-        <div class="stat-line">📊 24 kierunki · 16 uczelni · 86 opinii</div>
+        <div class="stat-line">📊 <span data-stat="uni.programs">24</span> kierunki · <span data-stat="uni.universities">16</span> uczelni · <span data-stat="uni.reviews">86</span> opinii</div>
         <a class="go" href="https://biokoderka.github.io/bioinfo-uni" target="_blank" rel="noopener">Znajdź kierunek →</a>
       </div>
       <div class="feat f4">
@@ -437,32 +437,32 @@
     <div class="detail-head">
       <div class="htxt">
         <div class="eyebrow">bioinfojobs w liczbach</div>
-        <h2>670+ ofert pracy, aktualizowane co tydzień</h2>
+        <h2><span data-stat="jobs.total">670</span>+ ofert pracy, aktualizowane co tydzień</h2>
       </div>
       <a class="go" style="color:var(--good);" href="https://biokoderka.github.io/bioinfo-jobs/" target="_blank" rel="noopener">Przeglądaj oferty →</a>
     </div>
     <div class="bar-grid">
-      <div class="bar-card">
+      <div class="bar-card" data-stat-group="jobs.geo">
         <h4>📍 Regiony</h4>
-        <div class="bar-row"><div class="brow-top"><span>USA</span><b>269</b></div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Europa</span><b>207</b></div><div class="bar-track"><div class="bar-fill" style="width:77%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Inne</span><b>109</b></div><div class="bar-track"><div class="bar-fill" style="width:40%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Zdalnie</span><b>53</b></div><div class="bar-track"><div class="bar-fill" style="width:20%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Polska</span><b>32</b></div><div class="bar-track"><div class="bar-fill" style="width:12%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>USA</span><b data-stat="jobs.geo.USA">269</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.geo.USA" style="width:100%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Europa</span><b data-stat="jobs.geo.Europe">207</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.geo.Europe" style="width:77%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Inne</span><b data-stat="jobs.geo.Other">109</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.geo.Other" style="width:40%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Zdalnie</span><b data-stat="jobs.geo.Remote">53</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.geo.Remote" style="width:20%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Polska</span><b data-stat="jobs.geo.Poland">32</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.geo.Poland" style="width:12%;"></div></div></div>
       </div>
-      <div class="bar-card">
+      <div class="bar-card" data-stat-group="jobs.sector">
         <h4>🏢 Sektory</h4>
-        <div class="bar-row"><div class="brow-top"><span>Pharma/Biotech</span><b>352</b></div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Academia</span><b>210</b></div><div class="bar-track"><div class="bar-fill" style="width:60%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Clinical</span><b>90</b></div><div class="bar-track"><div class="bar-fill" style="width:26%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Startup</span><b>12</b></div><div class="bar-track"><div class="bar-fill" style="width:4%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Pharma/Biotech</span><b data-stat="jobs.sector.Pharma/Biotech">352</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.sector.Pharma/Biotech" style="width:100%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Academia</span><b data-stat="jobs.sector.Academia">210</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.sector.Academia" style="width:60%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Clinical</span><b data-stat="jobs.sector.Clinical">90</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.sector.Clinical" style="width:26%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Startup</span><b data-stat="jobs.sector.Startup">12</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.sector.Startup" style="width:4%;"></div></div></div>
       </div>
-      <div class="bar-card">
+      <div class="bar-card" data-stat-group="jobs.seniority">
         <h4>🎓 Poziom doświadczenia</h4>
-        <div class="bar-row"><div class="brow-top"><span>Mid</span><b>334</b></div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Senior</span><b>191</b></div><div class="bar-track"><div class="bar-fill" style="width:57%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>PostDoc</span><b>99</b></div><div class="bar-track"><div class="bar-fill" style="width:30%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>PI/Lead</span><b>25</b></div><div class="bar-track"><div class="bar-fill" style="width:7%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Mid</span><b data-stat="jobs.seniority.Mid">334</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.seniority.Mid" style="width:100%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Senior</span><b data-stat="jobs.seniority.Senior">191</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.seniority.Senior" style="width:57%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>PostDoc</span><b data-stat="jobs.seniority.PostDoc">99</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.seniority.PostDoc" style="width:30%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>PI/Lead</span><b data-stat="jobs.seniority.PI/Lead">25</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="jobs.seniority.PI/Lead" style="width:7%;"></div></div></div>
       </div>
     </div>
   </div>
@@ -474,24 +474,24 @@
     <div class="detail-head">
       <div class="htxt">
         <div class="eyebrow">bioinfonews w liczbach</div>
-        <h2>68+ wpisów na tablicy, 170 w feedzie badawczym</h2>
+        <h2><span data-stat="news.board_total">68</span>+ wpisów na tablicy, <span data-stat="news.research_total">170</span> w feedzie badawczym</h2>
       </div>
       <a class="go" style="color:var(--warn);" href="https://biokoderka.github.io/bioinfo-news" target="_blank" rel="noopener">Wejdź na tablicę →</a>
     </div>
     <div class="bar-grid">
-      <div class="bar-card">
-        <h4>📋 Tablica społeczności (68 aktywnych)</h4>
-        <div class="bar-row"><div class="brow-top"><span>Kursy stałe</span><b>34</b></div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Meetupy</span><b>22</b></div><div class="bar-track"><div class="bar-fill" style="width:65%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Inne inicjatywy</span><b>5</b></div><div class="bar-track"><div class="bar-fill" style="width:15%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Kursy z terminem</span><b>4</b></div><div class="bar-track"><div class="bar-fill" style="width:12%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Projekty</span><b>3</b></div><div class="bar-track"><div class="bar-fill" style="width:9%;"></div></div></div>
+      <div class="bar-card" data-stat-group="news.board_types">
+        <h4>📋 Tablica społeczności (<span data-stat="news.board_total">68</span> aktywnych)</h4>
+        <div class="bar-row"><div class="brow-top"><span>Kursy stałe</span><b data-stat="news.board_types.Kursy stałe">34</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="news.board_types.Kursy stałe" style="width:100%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Meetupy</span><b data-stat="news.board_types.Meetupy">22</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="news.board_types.Meetupy" style="width:65%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Inne inicjatywy</span><b data-stat="news.board_types.Inne inicjatywy">5</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="news.board_types.Inne inicjatywy" style="width:15%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Kursy z terminem</span><b data-stat="news.board_types.Kursy z terminem">4</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="news.board_types.Kursy z terminem" style="width:12%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Projekty</span><b data-stat="news.board_types.Projekty">3</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="news.board_types.Projekty" style="width:9%;"></div></div></div>
       </div>
-      <div class="bar-card">
-        <h4>📄 Feed badawczy (170 wpisów)</h4>
-        <div class="bar-row"><div class="brow-top"><span>Artykuły / preprinty</span><b>124</b></div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Narzędzia</span><b>31</b></div><div class="bar-track"><div class="bar-fill" style="width:25%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Granty</span><b>15</b></div><div class="bar-track"><div class="bar-fill" style="width:12%;"></div></div></div>
+      <div class="bar-card" data-stat-group="news.research_types">
+        <h4>📄 Feed badawczy (<span data-stat="news.research_total">170</span> wpisów)</h4>
+        <div class="bar-row"><div class="brow-top"><span>Artykuły / preprinty</span><b data-stat="news.research_types.Artykuły / preprinty">124</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="news.research_types.Artykuły / preprinty" style="width:100%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Narzędzia</span><b data-stat="news.research_types.Narzędzia">31</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="news.research_types.Narzędzia" style="width:25%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Granty</span><b data-stat="news.research_types.Granty">15</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="news.research_types.Granty" style="width:12%;"></div></div></div>
       </div>
       <div class="bar-card">
         <h4>✦ Źródła</h4>
@@ -509,30 +509,30 @@
     <div class="detail-head">
       <div class="htxt">
         <div class="eyebrow">bioinfouni w liczbach</div>
-        <h2>24 kierunki, 16 uczelni, 8 miast</h2>
+        <h2><span data-stat="uni.programs">24</span> kierunki, <span data-stat="uni.universities">16</span> uczelni, <span data-stat="uni.cities_count">8</span> miast</h2>
       </div>
       <a class="go" style="color:var(--cyan);" href="https://biokoderka.github.io/bioinfo-uni" target="_blank" rel="noopener">Znajdź kierunek →</a>
     </div>
     <div class="bar-grid">
-      <div class="bar-card">
+      <div class="bar-card" data-stat-group="uni.cities">
         <h4>📍 Miasta</h4>
-        <div class="bar-row"><div class="brow-top"><span>Warszawa</span><b>8</b></div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Kraków</span><b>4</b></div><div class="bar-track"><div class="bar-fill" style="width:50%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Poznań</span><b>4</b></div><div class="bar-track"><div class="bar-fill" style="width:50%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Wrocław</span><b>4</b></div><div class="bar-track"><div class="bar-fill" style="width:50%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Białystok / Gdańsk / Lublin / Katowice</span><b>1 każde</b></div><div class="bar-track"><div class="bar-fill" style="width:13%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Warszawa</span><b data-stat="uni.cities.Warszawa">8</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.cities.Warszawa" style="width:100%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Kraków</span><b data-stat="uni.cities.Kraków">4</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.cities.Kraków" style="width:50%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Poznań</span><b data-stat="uni.cities.Poznań">4</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.cities.Poznań" style="width:50%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Wrocław</span><b data-stat="uni.cities.Wrocław">4</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.cities.Wrocław" style="width:50%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Pozostałe miasta</span><b data-stat="uni.cities.Inne miasta">4</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.cities.Inne miasta" style="width:13%;"></div></div></div>
       </div>
-      <div class="bar-card">
+      <div class="bar-card" data-stat-group="uni.levels">
         <h4>🎓 Poziom studiów</h4>
-        <div class="bar-row"><div class="brow-top"><span>I stopień</span><b>12</b></div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>II stopień</span><b>8</b></div><div class="bar-track"><div class="bar-fill" style="width:67%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Studia podyplomowe</span><b>3</b></div><div class="bar-track"><div class="bar-fill" style="width:25%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>I stopień</span><b data-stat="uni.levels.I stopień">12</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.levels.I stopień" style="width:100%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>II stopień</span><b data-stat="uni.levels.II stopień">8</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.levels.II stopień" style="width:67%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Studia podyplomowe</span><b data-stat="uni.levels.Studia podyplomowe">3</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.levels.Studia podyplomowe" style="width:25%;"></div></div></div>
       </div>
-      <div class="bar-card">
+      <div class="bar-card" data-stat-group="uni.reviews_group">
         <h4>💬 Opinie i kontynuacja</h4>
-        <div class="bar-row"><div class="brow-top"><span>Opinie studentów</span><b>86</b></div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Oferują II stopień</span><b>16</b></div><div class="bar-track"><div class="bar-fill" style="width:60%;"></div></div></div>
-        <div class="bar-row"><div class="brow-top"><span>Bez II stopnia</span><b>7</b></div><div class="bar-track"><div class="bar-fill" style="width:26%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Opinie studentów</span><b data-stat="uni.reviews">86</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.reviews_group.reviews" style="width:100%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Oferują II stopień</span><b data-stat="uni.offers_second_degree">16</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.reviews_group.offers_second_degree" style="width:60%;"></div></div></div>
+        <div class="bar-row"><div class="brow-top"><span>Bez II stopnia</span><b data-stat="uni.no_second_degree">7</b></div><div class="bar-track"><div class="bar-fill" data-stat-bar="uni.reviews_group.no_second_degree" style="width:26%;"></div></div></div>
       </div>
     </div>
   </div>
@@ -696,6 +696,41 @@
 </div>
 
 <script>
+  // Fetch live stats.json (generated by GitHub Actions from BioInfoJobs/News/Uni)
+  // and swap the numbers baked into the page. If it's missing or the fetch
+  // fails (e.g. opening the file locally), the numbers above stay as-is.
+  (function(){
+    function get(obj, path){
+      return path.split('.').reduce(function(o,k){ return (o && k in o) ? o[k] : undefined; }, obj);
+    }
+    function applyStats(s){
+      document.querySelectorAll('[data-stat]').forEach(function(el){
+        var val = get(s, el.getAttribute('data-stat'));
+        if (val !== undefined) el.textContent = val;
+      });
+      document.querySelectorAll('[data-stat-group]').forEach(function(group){
+        var groupObj = get(s, group.getAttribute('data-stat-group'));
+        if (!groupObj) return;
+        var bars = group.querySelectorAll('[data-stat-bar]');
+        var values = Array.prototype.map.call(bars, function(b){
+          return get(s, b.getAttribute('data-stat-bar')) || 0;
+        });
+        var max = Math.max.apply(null, values.concat([1]));
+        bars.forEach(function(b){
+          var val = get(s, b.getAttribute('data-stat-bar'));
+          if (val === undefined) return;
+          b.style.width = Math.max(4, Math.round((val / max) * 100)) + '%';
+        });
+      });
+    }
+    fetch('stats.json', {cache:'no-store'})
+      .then(function(r){ return r.json(); })
+      .then(applyStats)
+      .catch(function(err){
+        console.warn('BioinfoSites: nie udało się pobrać stats.json — zostają liczby zapasowe.', err);
+      });
+  })();
+
   function showPage(page){
     if(!['home','about','privacy'].includes(page)) page = 'home';
     document.getElementById('home').style.display = page === 'home' ? 'block' : 'none';
