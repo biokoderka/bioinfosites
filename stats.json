@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T12:28:45.548974+00:00",
+  "generated_at": "2026-08-30T11:30:54.470989+00:00",
   "jobs": {
     "total": 812,
     "geo": {
@@ -32,9 +32,9 @@
       "Projekty": 5
     },
     "board_courses_total": 39,
-    "research_total": 122,
+    "research_total": 157,
     "research_types": {
-      "Artykuły / preprinty": 82,
+      "Artykuły / preprinty": 117,
       "Narzędzia": 25,
       "Granty": 15
     }
