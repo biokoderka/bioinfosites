@@ -55,7 +55,10 @@ def stats_news():
     board = fetch_json("bioinfo-news", "news.json").get("entries", [])
     research = fetch_json("bioinfo-news", "research-news.json").get("entries", [])
 
-    active = [e for e in board if not e.get("archived")]
+    # wpis jest aktywny do końca dnia date_end — tak samo liczą to strony BioInfoNews
+    today = datetime.now(timezone.utc).date().isoformat()
+    active = [e for e in board
+              if not e.get("archived") and not (e.get("date_end") and e["date_end"] < today)]
     board_type = Counter(e.get("type") for e in active)
 
     research_type = Counter(e.get("type") for e in research)
@@ -80,37 +83,50 @@ def stats_news():
 
 
 # ── BioInfoUni ─────────────────────────────────────────────────────────────
+# Since Oct 2026 universities.json groups offers per kierunek:
+#   programs[] = one kierunek at one uczelnia, programs[].offers[] = its levels.
 def stats_uni():
-    unis = fetch_json("bioinfo-uni", "universities.json").get("universities", [])
+    programs = fetch_json("bioinfo-uni", "universities.json").get("programs", [])
     reviews = fetch_json("bioinfo-uni", "reviews.json").get("reviews", [])
 
-    cities = Counter(u.get("Miasto") for u in unis)
-    levels = Counter(u.get("Typ oferty") for u in unis)
-    second_degree = Counter(u.get("Czy jest II stopień na tej samej uczelni?") for u in unis)
-    uczelnie = {u.get("Uczelnia") for u in unis if u.get("Uczelnia")}
+    offers = [o for p in programs for o in p.get("offers", [])]
+    cities = Counter(p.get("city") for p in programs for _ in p.get("offers", []))
+    uczelnie = {p.get("university") for p in programs if p.get("university")}
+
+    def group(level):
+        level = level or ""
+        return "II" if level.startswith("II") else "I" if level.startswith("I") else "podyplomowe"
+
+    levels = Counter(group(o.get("level")) for o in offers)
+
+    # among first-cycle programmes: can you continue with II stopień at the same place?
+    first_cycle = [p for p in programs if any(group(o.get("level")) == "I" for o in p.get("offers", []))]
+    with_second = sum(1 for p in first_cycle if any(group(o.get("level")) == "II" for o in p["offers"]))
+    without_second = len(first_cycle) - with_second
 
     top_cities = ["Warszawa", "Kraków", "Poznań", "Wrocław"]
     other_cities = sum(v for k, v in cities.items() if k not in top_cities)
 
     return {
-        "programs": len(unis),
+        "programs": len(offers),          # programy studiów (każdy stopień osobno)
+        "kierunki": len(programs),        # karty na stronie
         "universities": len(uczelnie),
         "cities_count": len(cities),
         "cities": {**pick(cities, top_cities), "Inne miasta": other_cities},
         "levels": {
-            "I stopień": levels.get("I stopień", 0),
-            "II stopień": levels.get("II stopień", 0) + levels.get("II stopień / specjalizacja", 0),
-            "Studia podyplomowe": levels.get("studia podyplomowe", 0),
+            "I stopień": levels.get("I", 0),
+            "II stopień": levels.get("II", 0),
+            "Studia podyplomowe": levels.get("podyplomowe", 0),
         },
         "reviews": len(reviews),
-        "offers_second_degree": second_degree.get("Tak", 0),
-        "no_second_degree": second_degree.get("Brak", 0),
+        "offers_second_degree": with_second,
+        "no_second_degree": without_second,
         # duplicated as a nested group so the bar-width calc on the page can
         # find all three numbers under one data-stat-group path
         "reviews_group": {
             "reviews": len(reviews),
-            "offers_second_degree": second_degree.get("Tak", 0),
-            "no_second_degree": second_degree.get("Brak", 0),
+            "offers_second_degree": with_second,
+            "no_second_degree": without_second,
         },
     }
 
