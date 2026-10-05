@@ -32,8 +32,10 @@ def pick(counter: Counter, keys):
 # ── BioInfoJobs ────────────────────────────────────────────────────────────
 def stats_jobs():
     data = fetch_json("bioinfo-jobs", "docs/jobs.json")
-    jobs = data.get("jobs", [])
-    total = len(jobs)  # cumulative, incl. archived — matches how the badge has always counted
+    # Since Oct 2026 jobs.json holds ACTIVE offers only (archived ones live in
+    # docs/archive.json), so every number below describes the current board.
+    jobs = [j for j in data.get("jobs", []) if not j.get("archived")]
+    total = len(jobs)
 
     geo = Counter(j.get("geo") for j in jobs)
     sector = Counter(j.get("category") for j in jobs)
@@ -41,6 +43,7 @@ def stats_jobs():
 
     return {
         "total": total,
+        "archived": data.get("archived_count", 0),
         "geo": pick(geo, ["USA", "Europe", "Other", "Remote", "Poland"]),
         "sector": pick(sector, ["Pharma/Biotech", "Academia", "Clinical", "Startup"]),
         "seniority": pick(seniority, ["Mid", "Senior", "PostDoc", "PI/Lead"]),
