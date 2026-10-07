@@ -1,67 +1,69 @@
 {
-  "generated_at": "2026-10-05T13:59:18.167475+00:00",
+  "generated_at": "2026-10-07T12:54:10.969741+00:00",
   "jobs": {
-    "total": 1036,
+    "total": 242,
+    "archived": 770,
     "geo": {
-      "USA": 401,
-      "Europe": 336,
-      "Other": 189,
-      "Remote": 78,
-      "Poland": 32
+      "USA": 82,
+      "Europe": 82,
+      "Other": 62,
+      "Remote": 16,
+      "Poland": 0
     },
     "sector": {
-      "Pharma/Biotech": 499,
-      "Academia": 369,
-      "Clinical": 138,
-      "Startup": 24
+      "Pharma/Biotech": 105,
+      "Academia": 96,
+      "Clinical": 31,
+      "Startup": 9
     },
     "seniority": {
-      "Mid": 539,
-      "Senior": 267,
-      "PostDoc": 162,
-      "PI/Lead": 43
+      "Mid": 121,
+      "Senior": 61,
+      "PostDoc": 38,
+      "PI/Lead": 18
     }
   },
   "news": {
-    "board_total": 135,
+    "board_total": 114,
     "board_types": {
       "Kursy stałe": 84,
-      "Meetupy": 28,
-      "Inne inicjatywy": 7,
-      "Kursy z terminem": 11,
+      "Meetupy": 12,
+      "Inne inicjatywy": 6,
+      "Kursy z terminem": 7,
       "Projekty": 5
     },
-    "board_courses_total": 95,
-    "research_total": 185,
+    "board_courses_total": 91,
+    "research_total": 340,
     "research_types": {
-      "Artykuły / preprinty": 142,
-      "Narzędzia": 28,
-      "Granty": 15
+      "Artykuły / preprinty": 267,
+      "Narzędzia": 60,
+      "Granty": 13
     }
   },
   "uni": {
-    "programs": 24,
-    "universities": 16,
+    "programs": 22,
+    "kierunki": 17,
+    "universities": 15,
     "cities_count": 8,
     "cities": {
-      "Warszawa": 8,
+      "Warszawa": 6,
       "Kraków": 4,
       "Poznań": 4,
       "Wrocław": 4,
       "Inne miasta": 4
     },
     "levels": {
-      "I stopień": 12,
-      "II stopień": 9,
+      "I stopień": 11,
+      "II stopień": 8,
       "Studia podyplomowe": 3
     },
     "reviews": 86,
-    "offers_second_degree": 16,
-    "no_second_degree": 7,
+    "offers_second_degree": 5,
+    "no_second_degree": 6,
     "reviews_group": {
       "reviews": 86,
-      "offers_second_degree": 16,
-      "no_second_degree": 7
+      "offers_second_degree": 5,
+      "no_second_degree": 6
     }
   }
 }
