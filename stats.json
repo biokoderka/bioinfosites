@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T13:02:28.023152+00:00",
+  "generated_at": "2026-10-09T12:48:59.602598+00:00",
   "jobs": {
     "total": 242,
     "archived": 770,
@@ -24,11 +24,11 @@
     }
   },
   "news": {
-    "board_total": 114,
+    "board_total": 116,
     "board_types": {
       "Kursy stałe": 84,
-      "Meetupy": 12,
-      "Inne inicjatywy": 6,
+      "Meetupy": 13,
+      "Inne inicjatywy": 7,
       "Kursy z terminem": 7,
       "Projekty": 5
     },
