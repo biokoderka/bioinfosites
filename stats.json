@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T13:46:56.441934+00:00",
+  "generated_at": "2026-11-12T14:50:12.188009+00:00",
   "jobs": {
     "total": 226,
     "archived": 951,
@@ -24,19 +24,19 @@
     }
   },
   "news": {
-    "board_total": 139,
+    "board_total": 138,
     "board_types": {
       "Kursy stałe": 84,
       "Meetupy": 5,
       "Inne inicjatywy": 5,
-      "Kursy z terminem": 6,
+      "Kursy z terminem": 5,
       "Projekty": 5
     },
-    "board_courses_total": 90,
-    "research_total": 2134,
+    "board_courses_total": 89,
+    "research_total": 2177,
     "research_types": {
-      "Artykuły / preprinty": 1451,
-      "Narzędzia": 229,
+      "Artykuły / preprinty": 1483,
+      "Narzędzia": 231,
       "Granty": 0
     }
   },
