@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-16T15:11:23.870965+00:00",
+  "generated_at": "2026-11-17T15:40:48.657052+00:00",
   "jobs": {
-    "total": 226,
-    "archived": 951,
+    "total": 213,
+    "archived": 996,
     "geo": {
-      "USA": 84,
-      "Europe": 75,
-      "Other": 50,
-      "Remote": 14,
-      "Poland": 3
+      "USA": 81,
+      "Europe": 69,
+      "Other": 48,
+      "Remote": 15,
+      "Poland": 0
     },
     "sector": {
-      "Pharma/Biotech": 103,
-      "Academia": 85,
+      "Pharma/Biotech": 101,
+      "Academia": 74,
       "Clinical": 30,
       "Startup": 6
     },
     "seniority": {
-      "Mid": 101,
-      "Senior": 63,
-      "PostDoc": 37,
-      "PI/Lead": 17
+      "Mid": 103,
+      "Senior": 55,
+      "PostDoc": 32,
+      "PI/Lead": 14
     }
   },
   "news": {
@@ -33,10 +33,10 @@
       "Projekty": 5
     },
     "board_courses_total": 89,
-    "research_total": 2059,
+    "research_total": 2123,
     "research_types": {
-      "Artykuły / preprinty": 1403,
-      "Narzędzia": 236,
+      "Artykuły / preprinty": 1448,
+      "Narzędzia": 234,
       "Granty": 0
     }
   },
