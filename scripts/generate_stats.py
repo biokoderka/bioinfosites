@@ -45,8 +45,8 @@ def stats_jobs():
         "total": total,
         "archived": data.get("archived_count", 0),
         "geo": pick(geo, ["USA", "Europe", "Other", "Remote", "Poland"]),
-        "sector": pick(sector, ["Pharma/Biotech", "Academia", "Clinical", "Startup"]),
-        "seniority": pick(seniority, ["Mid", "Senior", "PostDoc", "PI/Lead"]),
+        "sector": pick(sector, ["Pharma/Biotech", "Academia", "Clinical", "Startup", "Government/Public"]),
+        "seniority": pick(seniority, ["Mid", "Senior", "PostDoc", "PI/Lead", "Intern", "Junior"]),
     }
 
 
@@ -60,8 +60,15 @@ def stats_news():
     active = [e for e in board
               if not e.get("archived") and not (e.get("date_end") and e["date_end"] < today)]
     board_type = Counter(e.get("type") for e in active)
+    known = {"course-free", "meetup", "other", "course-dated", "project", "internship"}
+    unknown = {t: n for t, n in board_type.items() if t not in known}
+    if unknown:   # a new type on the board would silently drop out of the breakdown
+        print(f"⚠️  news.json types not shown in the hub breakdown: {unknown}")
 
     research_type = Counter(e.get("type") for e in research)
+    unknown = {t: n for t, n in research_type.items() if t not in {"research", "branza", "narzedzie", "grant"}}
+    if unknown:
+        print(f"⚠️  research-news.json types not shown in the hub breakdown: {unknown}")
 
     return {
         "board_total": len(active),
@@ -71,11 +78,13 @@ def stats_news():
             "Inne inicjatywy": board_type.get("other", 0),
             "Kursy z terminem": board_type.get("course-dated", 0),
             "Projekty": board_type.get("project", 0),
+            "Staże": board_type.get("internship", 0),
         },
         "board_courses_total": board_type.get("course-free", 0) + board_type.get("course-dated", 0),
         "research_total": len(research),
         "research_types": {
             "Artykuły / preprinty": research_type.get("research", 0),
+            "Branża": research_type.get("branza", 0),
             "Narzędzia": research_type.get("narzedzie", 0),
             "Granty": research_type.get("grant", 0),
         },
